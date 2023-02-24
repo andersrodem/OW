@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   
   const handle = () => {
-    alert("Din gris, dette kunne du fått gratis! Bare vent til etterfesten")
+    alert("Din gris, dette får du gratis på etterfest!")
   }
 
   return (
