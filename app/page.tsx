@@ -1,3 +1,4 @@
+'use client'
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "./page.module.css";
@@ -5,6 +6,11 @@ import styles from "./page.module.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+  
+  const handle = () => {
+    alert("Din gris, dette kunne du fått gratis! Bare vent til etterfesten")
+  }
+
   return (
     <main className="grid place-items-center px-5 pb-32">
       <div className="max-w-lg">
@@ -16,8 +22,8 @@ export default function Home() {
           <img className="my-10 rounded-md" src="/Pappa.jpg" alt="Next.js" />
           <img className="my-10 rounded-md" src="/bil.jpg" alt="Next.js" />
           <img className="my-10 rounded-md" src="/bilde.jpg" alt="Next.js" />
-          <button className="bg-blue-500 text-white w-full rounded-md py-3">Subscribe for 1$</button>
-          <p className="text-gray-300 text-sm text-center pt-5">Laget med kjærlighet av Erling og Anders</p>
+          <button onClick={handle} className="bg-blue-500 text-white w-full rounded-md py-3">Subscribe for 1$</button>
+          <p className="text-gray-300 text-sm text-center pt-5" >Laget med kjærlighet av Erling og Anders</p>
         </div>
       </div>
     </main>
